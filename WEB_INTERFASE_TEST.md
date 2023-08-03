@@ -33,3 +33,9 @@
 #### CURRENT_CLIENT()
 #### CURRENT REGION()
 #### CURRENT SESSION
+
+
+### Which of the following are valid context functions?
+#### CURRENT_CLIENT()
+#### CURRENT REGION()
+#### CURRENT SESSION
