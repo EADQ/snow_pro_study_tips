@@ -1,25 +1,31 @@
-## ROLES IN SNOWFLAKE
+# Roles in Snowflake
 
-### AccountAdmin
-- Has full access to all features and objects in Snowflake.
-- Can manage account-level resources (e.g., users, roles, integrations).
-- Can view and manage billing and account settings.
+## ACCOUNTADMIN
+   ### Full system privileges
+   ### Manage the Snowflake account
+   ### Configure account parameters
+   ### Create and manage resources at the account level
 
-### SecurityAdmin
-- Can manage all security-related operations.
-- Manages roles and users, but cannot grant access to database objects.
-- Cannot view billing information.
+## SECURITYADMIN
+   ### Manage security policies
+   ### Handle authentication and authorization
+   ### Control access at the object and column level
+   ### Manage integrations and network policies
 
-### UserAdmin
-- Can create, alter, and delete users.
-- Cannot assign roles to users nor grant privileges to roles, except for the PUBLIC role.
+## SYSADMIN
+   ### Manage objects within an account
+   ### Create and manage compute warehouses
+   ### Create and manage databases and schemas
+   ### No access to account settings
 
-### SysAdmin
-- Has all privileges on all database objects, except for full control over roles and users.
-- Can manage compute resources (warehouses) and storage objects (databases, schemas, tables).
+## USERADMIN
+   ### Create and manage users and roles
+   ### Assign roles to users
+   ### Manage object access
 
-### PUBLIC
-- Is a predefined role that always exists and cannot be deleted.
-- All users belong to the PUBLIC role by default.
-- It's used to grant privileges that should be applied to all users.
+## PUBLIC
+   ### Default role for all users
+   ### Read access to public objects
+   ### Limited and safe, with no administrative privileges
+
 
